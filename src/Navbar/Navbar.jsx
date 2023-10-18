@@ -19,7 +19,7 @@ const Navbar = () => {
     </>
 
     return (
-        <div className="navbar mb-10 flex-col md:flex-row justify-between bg-orange-50">
+        <div className="navbar mb-10 flex-col md:flex-row justify-between pb-5 md:pb-0 bg-orange-50">
             <div>
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
