@@ -9,7 +9,7 @@ const BestFashion = () => {
             <div className="lg:absolute lg:z-0 lg:bottom-[-100px] lg:left-[400px]">
                 <div className="ml-10 mt-10 md:mt-0 md:ml-52 lg:pl-48 mx-auto lg:mx-0">
                     <h1 className="text-3xl md:text-4xl font-semibold">Best Fashion<br /><span className="text-orange-600">Since 2010</span> </h1>
-                    <p className="md:w-[350px] mt-6">Elevate your style with our fashion brand, where contemporary trends meet timeless classics since 2010, offering you the best in modern, high-quality fashion. Explore our collection for a perfect blend of sophistication and comfort.</p>
+                    <p className="md:w-[350px] mt-6 text-gray-500">Elevate your style with our fashion brand, where contemporary trends meet timeless classics since 2010, offering you the best in modern, high-quality fashion. Explore our collection for a perfect blend of sophistication and comfort.</p>
                 </div>
 
                 <div className="flex gap-4  md:gap-10 justify-center rounded-2xl items-center mt-14 md:w-[550px] md:h-[200px] bg-gradient-to-r from-yellow-600 via-yellow-500 to-yellow-300 shadow-md p-8 md:p-0 mx-auto lg:mx-0">
