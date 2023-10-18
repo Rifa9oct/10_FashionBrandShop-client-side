@@ -19,7 +19,7 @@ const Navbar = () => {
     </>
 
     return (
-        <div className="navbar mb-10 flex-col md:flex-row justify-between pb-5 md:pb-0 bg-orange-50">
+        <div className="navbar mb-10 flex-col md:flex-row items-center justify-between pb-5 md:pb-0 bg-[#FFFFFF]">
             <div>
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -29,8 +29,7 @@ const Navbar = () => {
                         {navLinks}
                     </ul>
                 </div>
-                <img className="h-20" src={logo} />
-                <h1 className="text-2xl font-pacifico">Fashion Brand Shop</h1>
+                <img className="h-24" src={logo} />
             </div>
             <div>
                 <div className="hidden mr-8 lg:flex">
@@ -38,7 +37,7 @@ const Navbar = () => {
                         {navLinks}
                     </ul>
                 </div>
-                <Link to="/login" className="btn md:mr-4 bg-orange-500 hover:bg-orange-700 text-white">login</Link>
+                <Link to="/login" className="btn md:mr-4 bg-blue-500 hover:bg-blue-700 text-white">login</Link>
             </div>
         </div>
     );
