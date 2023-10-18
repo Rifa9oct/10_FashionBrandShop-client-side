@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        pacifico:" 'Pacifico', cursive ",
+        youngSerif:" Young Serif', serif "
+      }
+    },
   },
   plugins: [require("daisyui")],
 }
