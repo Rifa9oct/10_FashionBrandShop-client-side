@@ -4,7 +4,7 @@ import { TfiUser } from "react-icons/tfi";
 const Bannar = () => {
     return (
         <div>
-            <div className="hero mt-28 h-[536px]" style={{ backgroundImage: 'url(https://i.ibb.co/NKQFdNL/bannar.png)' }}>
+            <div className="hero h-[536px]" style={{ backgroundImage: 'url(https://i.ibb.co/NKQFdNL/bannar.png)' }}>
                 <div className="hero-content text-center text-neutral-content">
                     <div className="max-w-md">
                         <h1 className="ml-10 mb-5 font-pacifico text-5xl text-pink-600">Find The Best Fashion Style For You</h1>
