@@ -3,20 +3,36 @@ import logo from "../assets/logo.png"
 import { BsDatabaseFillAdd } from "react-icons/bs";
 import { AiFillHome } from "react-icons/ai";
 import { FaCartShopping } from "react-icons/fa6";
+import Swal from "sweetalert2";
+import { useContext } from "react";
+import { AuthContext } from "../AuthProvider/AuthProvider";
 
 const Navbar = () => {
+    const { user, logOut } = useContext(AuthContext);
 
     const navLinks = <>
         <li> <NavLink to="/" className={({ isActive, isPending }) =>
-            isActive ? "active rounded-lg  text-red-600" : isPending ? "pending" : ""}><AiFillHome className="mx-auto text-2xl"></AiFillHome>Home</NavLink>
+            isActive ? "active rounded-lg text-red-600" : isPending ? "pending" : ""}><AiFillHome className="text-xl mx-auto"></AiFillHome>Home</NavLink>
         </li>
         <li> <NavLink to="/addProduct" className={({ isActive, isPending }) =>
-            isActive ? "active rounded-lg  text-red-600" : isPending ? "pending" : ""}><BsDatabaseFillAdd className="mx-auto text-2xl"></BsDatabaseFillAdd>Add Product</NavLink>
+            isActive ? "active rounded-lg text-red-600" : isPending ? "pending" : ""}><BsDatabaseFillAdd className="text-xl mx-auto"></BsDatabaseFillAdd>Add Product</NavLink>
         </li>
         <li> <NavLink to="/mycart" className={({ isActive, isPending }) =>
-            isActive ? "active rounded-lg  text-red-600" : isPending ? "pending" : ""}><FaCartShopping className="mx-auto text-2xl"></FaCartShopping>My Cart</NavLink>
+            isActive ? "active rounded-lg text-red-600" : isPending ? "pending" : ""}><FaCartShopping className="text-xl mx-auto"></FaCartShopping>My Cart</NavLink>
         </li>
     </>
+
+    const handleLogOut = () => {
+        logOut()
+            .then(() => {
+                Swal.fire(
+                    'Thank you',
+                    'Logout successfully',
+                    'success'
+                )
+            })
+            .catch(error => console.error(error))
+    }
 
     return (
         <div className="navbar flex-col md:flex-row items-center justify-between pb-5 md:pb-0 bg-[#FFFFFF]">
@@ -37,7 +53,24 @@ const Navbar = () => {
                         {navLinks}
                     </ul>
                 </div>
-                <Link to="/login" className="btn md:mr-4 bg-blue-500 hover:bg-blue-700 text-white">login</Link>
+
+                <div className="mt-4 md:mt-0">
+                    {
+                        user ?
+                            <div className="flex items-center">
+                                <p>{user.displayName}</p>
+                                {
+                                    user.photoURL ?
+                                        <img className="w-[50px] h-[50px] mx-3 rounded-full" src={user.photoURL} /> :
+                                        <img className="w-[50px] h-[50px] mx-3 rounded-full" src="https://i.ibb.co/VC1vhmp/user.png" />
+                                }
+                                <a onClick={handleLogOut} className="btn bg-blue-500 hover:bg-blue-700 text-white">Logout</a>
+                            </div>
+                            :
+                            <Link to="/login" className="btn bg-blue-500 hover:bg-blue-700 text-white">Login</Link>
+                    }
+                </div>
+                
             </div>
         </div>
     );
