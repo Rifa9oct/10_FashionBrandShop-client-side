@@ -43,10 +43,10 @@ const Login = () => {
 
 
     return (
-        <div className="w-[848px] bg-slate-100 mx-auto flex items-center justify-center rounded-lg shadow-lg">
-            <div className="w-[385px] mx-8">
+        <div className="w-3/4 mb-10 pb-8 lg:pb-0 lg:mb-0 lg:w-[848px] bg-slate-100 mx-auto flex flex-col-reverse lg:flex-row items-center justify-center rounded-lg shadow-lg">
+            <div className="w-3/4 lg:w-[385px] mx-8">
                 <form onSubmit={handleLogin}>
-                    <div className="form-control">
+                    <div className="form-control mt-10">
                         <label className="label">
                             <span className="label-text">Email</span>
                         </label>
@@ -86,12 +86,12 @@ const Login = () => {
                 </div>
 
                 {/* continue with google */}
-                <div className="flex items-center w-[60%] mx-auto justify-center bg-[#F4F4F4] py-2 text-gray-500 hover:text-blue-500 font-semibold shadow-md rounded-3xl">
+                <div className="flex items-center lg:w-[60%] mx-auto justify-center bg-[#F4F4F4] py-2 text-gray-500 hover:text-blue-500 font-semibold shadow-md rounded-3xl">
                     <FcGoogle className="text-2xl mr-2"></FcGoogle>
                     <button onClick={handleGoogleSignIn} className="">Continue with google</button>
                 </div>
             </div>
-            <div><img className="w-[400px] rounded-r-lg shadow-lg" src={img} /></div>
+            <div><img className="lg:w-[400px] rounded-lg lg:rounded-r-lg shadow-lg mx-auto" src={img} /></div>
         </div>
     );
 };

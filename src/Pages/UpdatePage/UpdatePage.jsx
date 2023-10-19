@@ -18,13 +18,13 @@ const UpdatePage = () => {
     }
 
     return (
-        <div className='relative w-full'>
-            <img src={updatebg} />
-            <div className="absolute left-[80px] top-[150px] bg-transparent w-[650px] p-6 rounded-lg shadow-2xl">
-                <h1 className='text-4xl text-center mb-5'>Update Your Data</h1>
+        <div className='lg:relative lg:w-full'>
+            <h1 className='text-3xl md:text-4xl text-center mb-5'>Update <span className='text-cyan-600'>Your Data</span></h1>
+            <img className='hidden lg:block' src={updatebg} />
+            <div className="lg:absolute mx-8 mb-10 lg:mx-0 lg:my-0 bg-sky-200 lg:left-[80px] lg:top-[150px] lg:bg-transparent lg:w-[650px] p-6 rounded-lg shadow-lg lg:shadow-2xl">
                 <form onSubmit={handleUpdate}>
                     {/* left side */}
-                    <div className="flex gap-6 justify-center">
+                    <div className="flex flex-col md:flex-row gap-6 justify-center">
                         <div>
                             <div className="form-control">
                                 <label className="label">

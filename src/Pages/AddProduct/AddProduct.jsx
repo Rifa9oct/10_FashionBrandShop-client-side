@@ -21,9 +21,10 @@ const AddProduct = () => {
 
     return (
         <div>
-            <div className="relative">
-                <img className="w-full" src={add} />
-                <div className="absolute top-[150px] right-[200px] bg-transparent w-[650px] p-6 rounded-lg shadow-2xl border">
+            <div className="lg:relative">
+                <h1 className="text-3xl md:text-4xl text-center mb-5">Add Your <span className="text-orange-600">Favourite</span></h1>
+                <img className="hidden lg:block lg:w-full" src={add} />
+                <div className="m-5 lg:absolute lg:top-[150px] lg:right-[200px] lg:bg-transparent lg:w-[650px] p-6 rounded-lg shadow-lg lg:shadow-2xl border bg-orange-100">
                     <form onSubmit={handleAddProduct}>
                         {/* left side */}
                         <div className="flex gap-6 justify-center">
@@ -50,7 +51,7 @@ const AddProduct = () => {
 
                             {/* right side */}
                             <div>
-                                <div className="form-control">
+                                <div className="form-control mx-auto">
                                     <label className="label">
                                         <span className="label-text font-bold">Type</span>
                                     </label>
@@ -71,15 +72,15 @@ const AddProduct = () => {
                             </div>
                         </div>
 
-                        <div>
-                            <fieldset className="focus-within:border-[3px] border mt-5 input-warning w-[400px] rounded-lg mx-auto">
-                                <legend className="ml-4 font-bold text-sm">Short description</legend>
-                                <textarea className=" pl-4 pt-3 outline-none rounded-lg" name="description" placeholder="write here" cols="50"></textarea>
-                            </fieldset>
+                        <div className="form-control">
+                            <label className="label">
+                                <span className="label-text md:ml-[85px] lg:ml-12 mt-4 font-bold">Short Description</span>
+                            </label>
+                            <input type="message" name="description" placeholder="write here" className="w-[340px] md:w-[500px] mx-auto input input-bordered input-warning" />
                         </div>
 
-                        <div className="form-control w-1/4 mt-4 mx-auto">
-                            <button className="btn bg-orange-300 hover:bg-orange-400 text-orange-700 hover:text-white ">Add Product</button>
+                        <div className="form-control md:w-1/4 mt-4 mx-auto">
+                            <button className="btn border-0 bg-orange-300 hover:bg-orange-400 text-orange-700 hover:text-white ">Add Product</button>
                         </div>
                     </form>
                 </div>

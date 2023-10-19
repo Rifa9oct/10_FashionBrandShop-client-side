@@ -53,8 +53,8 @@ const Register = () => {
     }
 
     return (
-        <div className="border w-[816px] mx-auto flex items-center justify-center rounded-lg shadow-lg mb-20">
-            <div><img className="w-[400px] h-[520px] rounded-l-lg shadow-lg" src={registerImg} /></div>
+        <div className="border mx-12 lg:w-[816px] lg:mx-auto flex flex-col lg:flex-row items-center justify-center rounded-lg shadow-lg mb-20">
+            <div><img className="lg:w-[400px] lg:h-[520px] rounded-l-lg shadow-lg" src={registerImg} /></div>
             <div className="w-[350px] mx-8">
                 <form onSubmit={handleRegister}>
                     <div className="form-control">
@@ -97,7 +97,7 @@ const Register = () => {
                         </div>
                     </div>
 
-                    <div className="form-control w-3/4 mt-4 mx-auto">
+                    <div className="form-control lg:w-3/4 mt-4 mx-auto">
                         <button className="btn bg-pink-400 hover:bg-pink-600 text-white ">Register</button>
                     </div>
 
