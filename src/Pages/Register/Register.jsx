@@ -98,10 +98,10 @@ const Register = () => {
                     </div>
 
                     <div className="form-control lg:w-3/4 mt-4 mx-auto">
-                        <button className="btn bg-pink-400 hover:bg-pink-600 text-white ">Register</button>
+                        <button className="btn bg-pink-400 hover:bg-pink-600 text-white ">Create Account</button>
                     </div>
 
-                    <p className="mt-4 mb-6 text-center">Already have an account? Please <Link className="text-pink-600 font-bold underline underline-offset-2" to="/login">Login</Link></p>
+                    <p className="mt-4 mb-6 text-center">Already have an account? Please <Link className="text-pink-400 font-bold underline underline-offset-2" to="/login">Login</Link></p>
                 </form>
             </div>
         </div>

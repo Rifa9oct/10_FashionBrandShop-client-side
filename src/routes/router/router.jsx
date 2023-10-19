@@ -6,11 +6,13 @@ import MyCart from "../../Pages/MyCart/MyCart";
 import Login from "../../Pages/Login/Login";
 import Register from "../../Pages/Register/Register";
 import UpdatePage from "../../Pages/UpdatePage/UpdatePage";
+import ErrorPage from "../../Pages/ErrorPage/ErrorPage";
 
 
 const router = createBrowserRouter([
     {
       path: "/",
+      errorElement:<ErrorPage></ErrorPage>,
       element: <Root></Root>,
       children:[
         {
