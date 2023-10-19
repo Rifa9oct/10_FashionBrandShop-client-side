@@ -2,7 +2,7 @@ import add from "../../assets/add.jpg"
 
 const AddProduct = () => {
 
-    const handleAddProduct = e =>{
+    const handleAddProduct = e => {
         e.preventDefault();
         const form = e.target;
         const name = form.name.value;
@@ -14,13 +14,14 @@ const AddProduct = () => {
         const description = form.description.value;
 
         console.log(photoUrl, name, brand, type, price, rating, description);
-        
+        form.reset();
+
     }
 
 
     return (
         <div>
-            <div className="relative rounded-lg">
+            <div className="relative">
                 <img className="w-full" src={add} />
                 <div className="absolute top-[150px] right-[200px] bg-transparent w-[650px] p-6 rounded-lg shadow-2xl border">
                     <form onSubmit={handleAddProduct}>
@@ -71,9 +72,9 @@ const AddProduct = () => {
                         </div>
 
                         <div>
-                            <fieldset className="focus-within:border-[3px] border mt-3 input-warning w-[500px] rounded-lg mx-auto">
+                            <fieldset className="focus-within:border-[3px] border mt-5 input-warning w-[400px] rounded-lg mx-auto">
                                 <legend className="ml-4 font-bold text-sm">Short description</legend>
-                                <textarea className="outline-none ml-4" name="description" placeholder="write here" cols="49"></textarea>
+                                <textarea className=" pl-4 pt-3 outline-none rounded-lg" name="description" placeholder="write here" cols="50"></textarea>
                             </fieldset>
                         </div>
 
