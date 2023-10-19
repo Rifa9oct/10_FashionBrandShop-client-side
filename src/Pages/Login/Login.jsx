@@ -50,7 +50,7 @@ const Login = () => {
                         <label className="label">
                             <span className="label-text">Email</span>
                         </label>
-                        <input type="email" name="email" placeholder="Your email" className="input input-bordered" required />
+                        <input type="email" name="email" placeholder="your email" className="input input-bordered" required />
                     </div>
                     <div className="form-control">
                         <label className="label">
