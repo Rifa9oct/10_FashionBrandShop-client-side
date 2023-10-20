@@ -1,9 +1,10 @@
 import { LuPenSquare } from "react-icons/lu";
 import { FaCircleArrowRight } from "react-icons/fa6";
 import { AiFillStar } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const DisplayNike = ({ data }) => {
-    const { photoUrl, name, type, brand, rating, price } = data;
+    const {_id, photoUrl, name, type, brand, rating, price } = data;
 
     return (
         <div className="w-[312px] border rounded-lg shadow-xl mx-auto">
@@ -17,16 +18,16 @@ const DisplayNike = ({ data }) => {
                         <p>Type: {type}</p>
                     </div>
                     <div>
-                        <p className="pb-[4px] flex items-center gap-1">Rating: {rating} <AiFillStar className="text-orange-400"></AiFillStar></p>
+                        <p className="pb-[4px] flex items-center gap-1">Rating: {rating} <AiFillStar className="text-orange-400"/></p>
                         <p>Price: {price}</p>
                     </div>
                 </div>
                 <div className="bg-pink-600 rounded-b-lg text-white flex justify-around items-center">
                     <div className="pr-8 py-3 border-r-[3px]">
-                        <button className="flex items-center gap-2">See Detail<FaCircleArrowRight></FaCircleArrowRight></button>
+                        <button className="flex items-center gap-2">See Detail<FaCircleArrowRight/></button>
                     </div>
                     <div>
-                        <button className="py-3 flex items-center gap-2">Update <LuPenSquare></LuPenSquare></button>
+                        <Link to={`/update/${_id}`} className="py-3 flex items-center gap-2">Update <LuPenSquare/></Link>
                     </div>
                 </div>
             </div>

@@ -41,8 +41,9 @@ const router = createBrowserRouter([
             element:<Register></Register>
         },
         {
-            path:"/update",
-            element:<PrivateRoute><UpdatePage></UpdatePage></PrivateRoute>
+            path:"/update/:id",
+            element:<PrivateRoute><UpdatePage></UpdatePage></PrivateRoute>,
+            loader:({params}) => fetch(`https://fashion-brand-shop-server-side.vercel.app/products/${params.id}`)
         },
         {
             path:"/adidas",
