@@ -24,7 +24,7 @@ const DisplayNike = ({ data }) => {
                 </div>
                 <div className="bg-pink-600 rounded-b-lg text-white flex justify-around items-center">
                     <div className="pr-8 py-3 border-r-[3px]">
-                        <button className="flex items-center gap-2">See Detail<FaCircleArrowRight/></button>
+                        <Link to={`/detail/${_id}`} className="flex items-center gap-2">See Detail<FaCircleArrowRight/></Link>
                     </div>
                     <div>
                         <Link to={`/update/${_id}`} className="py-3 flex items-center gap-2">Update <LuPenSquare/></Link>

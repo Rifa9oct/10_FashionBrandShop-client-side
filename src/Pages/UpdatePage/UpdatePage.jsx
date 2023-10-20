@@ -5,7 +5,6 @@ import { useLoaderData } from 'react-router-dom';
 const UpdatePage = () => {
     const loadedUser = useLoaderData();
     console.log(loadedUser);
-    const {_id, photoUrl, name, type, brand, rating, price } = loadedUser;
 
     const handleUpdate = e => {
         e.preventDefault();

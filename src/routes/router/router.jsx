@@ -12,6 +12,7 @@ import Adidas from "../../BrandPages/Adidas/Adidas";
 import Nike from "../../BrandPages/Nike.jsx/Nike";
 import Gucci from "../../BrandPages/Gucci/Gucci";
 import Zara from "../../BrandPages/Zara/Zara";
+import DetailPage from "../../Pages/DetailPage/DetailPage";
 
 
 const router = createBrowserRouter([
@@ -61,6 +62,11 @@ const router = createBrowserRouter([
         {
             path:"/zara",
             element:<Zara></Zara>
+        },   
+        {
+            path:"/detail/:id",
+            element:<DetailPage></DetailPage>,
+            loader:({params}) => fetch(`https://fashion-brand-shop-server-side.vercel.app/products/${params.id}`)
         },   
       ]
     },
