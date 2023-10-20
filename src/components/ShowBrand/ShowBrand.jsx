@@ -1,46 +1,31 @@
-import { useEffect, useState } from "react";
 import "./ShowBrand.css"
 import { useNavigate } from "react-router-dom";
-import Swal from "sweetalert2";
 
 const ShowBrand = ({ brand }) => {
     const { img, brand_name } = brand;
-    const [products, setProducts] = useState([]);
-
-    useEffect(() => {
-        fetch("https://fashion-brand-shop-server-side.vercel.app/products")
-            .then(res => res.json())
-            .then(data => {
-                console.log(data);
-                setProducts(data)
-            })
-    }, [])
 
     const navigate = useNavigate();
     const handleClick = brand => {
-        const item1 = brand.toLowerCase();
-        const matchingBrand = products.find(item => item1 === item.brand.toLowerCase());
-
-        if (matchingBrand) {
-            switch (matchingBrand.brand.toLowerCase()) {
-                case "nike":
-                    navigate("/nike");
-                    break;
-                case "gucci":
-                    navigate("/gucci");
-                    break;
-                case "zara":
-                    navigate("/zara");
-                    break;
-                case "adidas":
-                    navigate("/adidas");
-                    break;
-                default:
-                    Swal.fire("Sorry", "Not available", "error");
+        const selectBrand = brand.toLowerCase();
+        console.log(selectBrand);
+            if(selectBrand === "nike"){
+                navigate("/nike") ;
             }
-        } else {
-            Swal.fire("Sorry", "Not available", "error");
-        }
+           if(selectBrand === "adidas"){
+                navigate("/adidas") ;
+            }
+           if(selectBrand === "zara"){
+                navigate("/zara") ;
+            }
+           if(selectBrand === "levi's"){
+                navigate("/lavis") ;
+            }
+           if(selectBrand === "h&m"){
+                navigate("/handm") ;
+            }
+           if(selectBrand === "gucci"){
+                navigate("/gucci") ;
+            }
     }
 
     return (

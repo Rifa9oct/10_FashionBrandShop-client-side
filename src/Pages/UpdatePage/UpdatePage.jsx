@@ -64,7 +64,7 @@ return (
                             <label className="label">
                                 <span className="label-text mt-4 font-bold">Brand Name</span>
                             </label>
-                            <input type="text" name="brand" defaultValue={loadedUser?.brand}  placeholder="brand name" className="input input-bordered input-info w-full max-w-xs" />
+                            <input type="text" disabled name="brand" defaultValue={loadedUser?.brand}  placeholder="brand name" className="input input-bordered input-info w-full max-w-xs" />
                         </div>
                     </div>
 

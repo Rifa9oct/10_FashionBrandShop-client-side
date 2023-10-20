@@ -14,6 +14,9 @@ import Gucci from "../../BrandPages/Gucci/Gucci";
 import Zara from "../../BrandPages/Zara/Zara";
 import DetailPage from "../../Pages/DetailPage/DetailPage";
 import Lavis from "../../BrandPages/Levi's/Levis";
+import HAndM from "../../BrandPages/H&M/hAndM";
+
+
 
 
 const router = createBrowserRouter([
@@ -60,7 +63,8 @@ const router = createBrowserRouter([
         },
         {
             path:"/gucci",
-            element:<Gucci></Gucci>
+            element:<Gucci></Gucci>,
+            loader: () =>fetch("https://fashion-brand-shop-server-side.vercel.app/products")
         },
         {
             path:"/zara",
@@ -70,6 +74,11 @@ const router = createBrowserRouter([
         {
             path:"/lavis",
             element:<Lavis></Lavis>,
+            loader: () =>fetch("https://fashion-brand-shop-server-side.vercel.app/products")
+        },
+        {
+            path:"/handm",
+            element:<HAndM></HAndM>,
             loader: () =>fetch("https://fashion-brand-shop-server-side.vercel.app/products")
         },
         {
