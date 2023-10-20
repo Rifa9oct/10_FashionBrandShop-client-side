@@ -4,9 +4,9 @@ import Swal from "sweetalert2";
 const DetailPage = () => {
     const loadedProduct = useLoaderData();
     console.log(loadedProduct);
-    const { photoUrl, name,description } = loadedProduct;
+    const { photoUrl, name,description,brand, type, price, rating } = loadedProduct;
 
-    const mycart = loadedProduct;
+    const mycart = {photoUrl, name, brand, type, price, rating, description};
     console.log(mycart)
 
     const handleClick = () => {

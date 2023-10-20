@@ -8,7 +8,7 @@ const MyCart = () => {
     console.log(mycarts)
     return (
         <div>
-            <div className="max-w-[1320px] mb-20 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
+            <div className="max-w-[1320px] my-20 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
                 {
                    mycarts.map(mycart => <DisplayMyCart 
                     key={mycarts._id} 

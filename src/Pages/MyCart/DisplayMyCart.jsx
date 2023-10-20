@@ -7,13 +7,13 @@ const DisplayMyCart = ({ mycart, mycarts, setMycarts }) => {
     const handledelete = _id => {
         console.log(_id);
         Swal.fire({
-            title: 'Are you sure?',
-            text: "You won't be able to revert this!",
+            title: 'Are you sure ?',
+            text: "You won't be able to revert this !",
             icon: 'warning',
             showCancelButton: true,
             confirmButtonColor: '#3085d6',
             cancelButtonColor: '#d33',
-            confirmButtonText: 'Yes, delete it!'
+            confirmButtonText: 'Yes, delete it !'
         }).then((result) => {
             if (result.isConfirmed) {
                 fetch(`https://fashion-brand-shop-server-side.vercel.app/mycarts/${_id}`, {
@@ -24,8 +24,8 @@ const DisplayMyCart = ({ mycart, mycarts, setMycarts }) => {
                         console.log(data);
                         if (data.deletedCount > 0) {
                             Swal.fire(
-                                'Deleted!',
-                                'Your coffee has been deleted.',
+                                'Deleted !',
+                                'Your cart has been deleted.',
                                 'success'
                             )
                             const remaining = mycarts.filter(cart => cart._id !== _id)
