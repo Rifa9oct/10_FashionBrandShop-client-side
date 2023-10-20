@@ -1,6 +1,6 @@
-.card{
+.card_body{
     transition: all 0.3s;
 }
-.card:hover {
+.card_body:hover {
     transform: scale(1.15);
 }

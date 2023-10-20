@@ -50,7 +50,8 @@ const router = createBrowserRouter([
         },
         {
             path:"/nike",
-            element:<Nike></Nike>
+            element:<Nike></Nike>,
+            loader: () =>fetch("https://fashion-brand-shop-server-side.vercel.app/products")
         },
         {
             path:"/gucci",

@@ -44,7 +44,7 @@ const ShowBrand = ({ brand }) => {
     }
 
     return (
-        <div onClick={() => handleClick(brand_name)} className="card cursor-pointer bg-base-100 w-[312px] border shadow-xl mx-auto">
+        <div onClick={() => handleClick(brand_name)} className="card_body card cursor-pointer bg-base-100 w-[312px] border shadow-xl mx-auto">
             <h2 className="card-title text-orange-400 mx-auto pt-4 pb-2">{brand_name} Brand</h2>
             <figure className="h-[200px] w-full"><img src={img} alt="Shoes" /></figure>
         </div>
