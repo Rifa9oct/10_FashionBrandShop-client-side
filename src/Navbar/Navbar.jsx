@@ -17,7 +17,7 @@ const Navbar = () => {
         <li> <NavLink to="/addProduct" className={({ isActive, isPending }) =>
             isActive ? "active rounded-lg text-red-600" : isPending ? "pending" : ""}><BsDatabaseFillAdd className="text-xl mx-auto"></BsDatabaseFillAdd>Add Product</NavLink>
         </li>
-        <li> <NavLink to="/mycart" className={({ isActive, isPending }) =>
+        <li> <NavLink to="/mycarts" className={({ isActive, isPending }) =>
             isActive ? "active rounded-lg text-red-600" : isPending ? "pending" : ""}><FaCartShopping className="text-xl mx-auto"></FaCartShopping>My Cart</NavLink>
         </li>
     </>

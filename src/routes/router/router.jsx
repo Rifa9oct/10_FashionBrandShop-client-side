@@ -13,6 +13,7 @@ import Nike from "../../BrandPages/Nike.jsx/Nike";
 import Gucci from "../../BrandPages/Gucci/Gucci";
 import Zara from "../../BrandPages/Zara/Zara";
 import DetailPage from "../../Pages/DetailPage/DetailPage";
+import Lavis from "../../BrandPages/Levi's/Levis";
 
 
 const router = createBrowserRouter([
@@ -30,8 +31,9 @@ const router = createBrowserRouter([
             element:<PrivateRoute><AddProduct></AddProduct></PrivateRoute>
         },
         {
-            path:"/mycart",
-            element:<MyCart></MyCart>
+            path:"/mycarts",
+            element:<PrivateRoute><MyCart></MyCart></PrivateRoute>,
+            loader: () => fetch("https://fashion-brand-shop-server-side.vercel.app/mycarts")
         },
         {
             path:"/login",
@@ -48,7 +50,8 @@ const router = createBrowserRouter([
         },
         {
             path:"/adidas",
-            element:<Adidas></Adidas>
+            element:<Adidas></Adidas>,
+            loader: () =>fetch("https://fashion-brand-shop-server-side.vercel.app/products")
         },
         {
             path:"/nike",
@@ -61,11 +64,17 @@ const router = createBrowserRouter([
         },
         {
             path:"/zara",
-            element:<Zara></Zara>
+            element:<Zara></Zara>,
+            loader: () =>fetch("https://fashion-brand-shop-server-side.vercel.app/products")
         },   
         {
+            path:"/lavis",
+            element:<Lavis></Lavis>,
+            loader: () =>fetch("https://fashion-brand-shop-server-side.vercel.app/products")
+        },
+        {
             path:"/detail/:id",
-            element:<DetailPage></DetailPage>,
+            element:<PrivateRoute><DetailPage></DetailPage></PrivateRoute>,
             loader:({params}) => fetch(`https://fashion-brand-shop-server-side.vercel.app/products/${params.id}`)
         },   
       ]
