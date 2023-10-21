@@ -1,0 +1,13 @@
+.intro{
+    height: 0px;
+    max-width: 1320px;
+    position: absolute;
+    bottom: 0px;
+    background: aliceblue;
+    overflow: hidden;
+}
+
+.bannar:hover .intro{
+    height: 200px;
+    transition: 0.5s;
+}

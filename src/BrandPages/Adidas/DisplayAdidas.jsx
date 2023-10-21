@@ -7,7 +7,7 @@ const DisplayAdidas = ({data}) => {
     const {_id, photoUrl, name, type, brand, rating, price } = data;
     return (
         <div className="w-[312px] border rounded-lg shadow-xl mx-auto">
-            <img src={photoUrl} className="rounded-xl h-[250px]" />
+            <img src={photoUrl} className="rounded-t-lg h-[250px] w-[312px]" />
 
             <div className="">
                 <h2 className="text-pink-600 text-xl text-center my-3">{name}</h2>
@@ -22,7 +22,7 @@ const DisplayAdidas = ({data}) => {
                     </div>
                 </div>
                 <div className="bg-pink-600 rounded-b-lg text-white flex justify-around items-center">
-                    <div className="pr-8 py-3 border-r-[3px]">
+                    <div className="pr-8 py-3">
                         <Link to={`/detail/${_id}`} className="flex items-center gap-2">See Detail<FaCircleArrowRight /></Link>
                     </div>
                     <div>
