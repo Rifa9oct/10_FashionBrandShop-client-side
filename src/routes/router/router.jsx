@@ -15,9 +15,7 @@ import Zara from "../../BrandPages/Zara/Zara";
 import DetailPage from "../../Pages/DetailPage/DetailPage";
 import Lavis from "../../BrandPages/Levi's/Levis";
 import HAndM from "../../BrandPages/H&M/hAndM";
-
-
-
+import Prada from "../../BrandPages/Prada/Prada";
 
 const router = createBrowserRouter([
     {
@@ -79,6 +77,11 @@ const router = createBrowserRouter([
         {
             path:"/handm",
             element:<HAndM></HAndM>,
+            loader: () =>fetch("https://fashion-brand-shop-server-side.vercel.app/products")
+        },
+        {
+            path:"/prada",
+            element:<Prada></Prada>,
             loader: () =>fetch("https://fashion-brand-shop-server-side.vercel.app/products")
         },
         {

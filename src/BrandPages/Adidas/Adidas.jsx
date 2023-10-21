@@ -1,11 +1,9 @@
 import { useLoaderData } from "react-router-dom";
 import DisplayAdidas from "./DisplayAdidas";
 
-
 const Adidas = () => {
     const loadedData = useLoaderData();
     const datas = loadedData.filter(item => item.brand.toLowerCase().includes("adidas"));
-    console.log(datas)
 
     return (
         <div>

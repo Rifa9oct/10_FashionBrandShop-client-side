@@ -26,6 +26,9 @@ const ShowBrand = ({ brand }) => {
            if(selectBrand === "gucci"){
                 navigate("/gucci") ;
             }
+           if(selectBrand === "prada"){
+                navigate("/prada") ;
+            }
     }
 
     return (
