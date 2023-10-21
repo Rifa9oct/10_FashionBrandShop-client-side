@@ -26,7 +26,7 @@ const HAndM = () => {
                         </div>
                     </div>
                     <div id="slide3" className="carousel-item relative w-full">
-                        <img src="https://i.ibb.co/xGm6Scs/gucci-loafers.png" className="w-full"/>
+                        <img src="https://i.ibb.co/X8Sd5nd/Untitled-1.png" className="w-full"/>
                         <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                             <a href="#slide2" className="btn btn-circle">❮</a>
                             <a href="#slide1" className="btn btn-circle">❯</a>
