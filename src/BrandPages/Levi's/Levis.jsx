@@ -4,7 +4,7 @@ import DisplayLavis from "./DisplayLavis";
 const Lavis = () => {
     const loadedData = useLoaderData();
 
-    const datas = loadedData.filter(item => item.brand.toLowerCase().includes("lavi's"));
+    const datas = loadedData.filter(item => item.brand.toLowerCase().includes("levi's"));
     console.log(datas)
 
     return (
