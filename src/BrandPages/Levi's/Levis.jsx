@@ -9,22 +9,32 @@ const Lavis = () => {
 
     return (
         <div>
-            <div className=" max-w-[1320px] mt-10 mx-auto">
-                <div className="carousel w-full h-[500px] rounded-lg">
-                    <div id="item1" className="carousel-item w-full">
-                        <img src="https://i.ibb.co/jhZ0Z5c/nike.jpg" className="w-full" />
+            <div className="bannar hover:cursor-pointer relative max-w-[1320px] mt-10 mx-auto">
+                <div className="carousel rounded-md h-[500px]">
+                    <div id="slide1" className="carousel-item relative w-full">
+                        <img src="https://i.ibb.co/Ttr751n/Untiktled-1.jpg" className="w-full"/>
+                        <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide3" className="btn btn-circle">❮</a>
+                            <a href="#slide2" className="btn btn-circle">❯</a>
+                        </div>
                     </div>
-                    <div id="item2" className="carousel-item w-full">
-                        <img src="https://i.ibb.co/gyztRVc/nike2.jpg" className="w-full" />
+                    <div id="slide2" className="carousel-item relative w-full">
+                        <img src="https://i.ibb.co/j8Bc7PG/Unftitled-1.jpg" className="w-full"/>
+                        <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide1" className="btn btn-circle">❮</a>
+                            <a href="#slide3" className="btn btn-circle">❯</a>
+                        </div>
                     </div>
-                    <div id="item3" className="carousel-item w-full">
-                        <img src="https://i.ibb.co/9vLQRPZ/nike3.jpg" className="w-full" />
+                    <div id="slide3" className="carousel-item relative w-full">
+                        <img src="https://i.ibb.co/xGm6Scs/gucci-loafers.png" className="w-full"/>
+                        <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide2" className="btn btn-circle">❮</a>
+                            <a href="#slide1" className="btn btn-circle">❯</a>
+                        </div>
                     </div>
                 </div>
-                <div className="flex justify-center w-full py-2 gap-2">
-                    <a href="#item1" className="btn btn-sm bg-pink-400 hover:bg-pink-600 text-white">1</a>
-                    <a href="#item2" className="btn btn-sm bg-pink-400 hover:bg-pink-600 text-white">2</a>
-                    <a href="#item3" className="btn btn-sm bg-pink-400 hover:bg-pink-600 text-white">3</a>
+                <div className="intro opacity-60 rounded-b-lg">
+                    <p className="p-8 text-center mt-8 text-red-600">Levi's, short for Levi Strauss & Co., is an iconic American denim brand founded in 1853. Known for pioneering the blue jeans, Levi's has a rich heritage in creating durable, high-quality denim garments. Levi's jeans have become a symbol of timeless style, durability, and the spirit of American workwear. The brand's signature red tab and riveted pockets have made Levi's a classic choice for those seeking both fashion and functionality in their denim attire.</p>
                 </div>
             </div>
 

@@ -43,8 +43,12 @@ const AddProduct = () => {
     return (
         <div>
             <div className="lg:relative">
-                <h1 className="text-3xl md:text-4xl text-center mb-5">Add Your <span className="text-orange-600">Favourite</span></h1>
-                <img className="hidden lg:block lg:w-full" src={add} />
+                <div className="lg:relative">
+                    <div className="lg:absolute left-[580px] top-[40px]">
+                        <h1 className="text-3xl text-center md:text-4xl mb-5">Add Your <span className="text-orange-600">Favourite</span></h1>
+                    </div>
+                    <img className="hidden lg:block lg:w-full" src={add} />
+                </div>
                 <div className="m-5 lg:absolute lg:top-[150px] lg:right-[200px] lg:bg-transparent lg:w-[650px] p-6 rounded-lg shadow-lg lg:shadow-2xl border bg-orange-100">
                     <form onSubmit={handleAddProduct}>
                         {/* left side */}

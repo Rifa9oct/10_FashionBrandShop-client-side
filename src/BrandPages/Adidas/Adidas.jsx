@@ -9,22 +9,32 @@ const Adidas = () => {
 
     return (
         <div>
-            <div className=" max-w-[1320px] mt-10 mx-auto">
-                <div className="carousel w-full h-[500px] rounded-lg">
-                    <div id="item3" className="carousel-item w-full">
-                        <img src="https://i.ibb.co/zhHrxnp/adidas-bannar.jpg" className="w-full" />
+            <div className="bannar hover:cursor-pointer relative max-w-[1320px] mt-10 mx-auto">
+                <div className="carousel rounded-md h-[500px]">
+                    <div id="slide1" className="carousel-item relative w-full">
+                        <img src="https://i.ibb.co/Ttr751n/Untiktled-1.jpg" className="w-full"/>
+                        <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide3" className="btn btn-circle">❮</a>
+                            <a href="#slide2" className="btn btn-circle">❯</a>
+                        </div>
                     </div>
-                    <div id="item1" className="carousel-item w-full">
-                        <img src="https://i.ibb.co/vw9tcVq/adidas-s.jpg" className="w-full" />
+                    <div id="slide2" className="carousel-item relative w-full">
+                        <img src="https://i.ibb.co/j8Bc7PG/Unftitled-1.jpg" className="w-full"/>
+                        <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide1" className="btn btn-circle">❮</a>
+                            <a href="#slide3" className="btn btn-circle">❯</a>
+                        </div>
                     </div>
-                    <div id="item2" className="carousel-item w-full">
-                        <img src="https://i.ibb.co/Y2rMTzf/adidas.jpg" className="w-full" />
+                    <div id="slide3" className="carousel-item relative w-full">
+                        <img src="https://i.ibb.co/xGm6Scs/gucci-loafers.png" className="w-full"/>
+                        <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide2" className="btn btn-circle">❮</a>
+                            <a href="#slide1" className="btn btn-circle">❯</a>
+                        </div>
                     </div>
                 </div>
-                <div className="flex justify-center w-full py-2 gap-2">
-                    <a href="#item1" className="btn btn-sm bg-pink-400 hover:bg-pink-600 text-white">1</a>
-                    <a href="#item2" className="btn btn-sm bg-pink-400 hover:bg-pink-600 text-white">2</a>
-                    <a href="#item3" className="btn btn-sm bg-pink-400 hover:bg-pink-600 text-white">3</a>
+                <div className="intro opacity-60 rounded-b-lg">
+                    <p className="p-8 text-center mt-8 text-red-600">Adidas is a renowned global sportswear and footwear brand known for its innovation and performance-driven products. With a heritage dating back to 1949, Adidas has consistently delivered cutting-edge athletic gear and fashion-forward designs, catering to athletes and fashion enthusiasts alike. The iconic three-stripe logo has become a symbol of quality, style, and the pursuit of excellence in the world of sports and lifestyle.</p>
                 </div>
             </div>
 

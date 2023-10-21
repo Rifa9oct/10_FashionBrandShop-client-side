@@ -9,22 +9,32 @@ const Zara = () => {
 
     return (
         <div>
-            <div className=" max-w-[1320px] mt-10 mx-auto">
-                <div className="carousel w-full h-[500px] rounded-lg">
-                    <div id="item3" className="carousel-item w-full">
-                        <img src="https://i.ibb.co/7pk6FyB/Zara-Banner.jpg" className="w-full" />
+            <div className="bannar hover:cursor-pointer relative max-w-[1320px] mt-10 mx-auto">
+                <div className="carousel rounded-md h-[500px]">
+                    <div id="slide1" className="carousel-item relative w-full">
+                        <img src="https://i.ibb.co/Ttr751n/Untiktled-1.jpg" className="w-full"/>
+                        <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide3" className="btn btn-circle">❮</a>
+                            <a href="#slide2" className="btn btn-circle">❯</a>
+                        </div>
                     </div>
-                    <div id="item1" className="carousel-item w-full">
-                        <img src="https://i.ibb.co/TT3DV06/zara1-2.jpg" className="w-full" />
+                    <div id="slide2" className="carousel-item relative w-full">
+                        <img src="https://i.ibb.co/j8Bc7PG/Unftitled-1.jpg" className="w-full"/>
+                        <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide1" className="btn btn-circle">❮</a>
+                            <a href="#slide3" className="btn btn-circle">❯</a>
+                        </div>
                     </div>
-                    <div id="item2" className="carousel-item w-full">
-                        <img src="https://i.ibb.co/DYQX2vj/zara-banner.webp" className="w-full" />
+                    <div id="slide3" className="carousel-item relative w-full">
+                        <img src="https://i.ibb.co/xGm6Scs/gucci-loafers.png" className="w-full"/>
+                        <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide2" className="btn btn-circle">❮</a>
+                            <a href="#slide1" className="btn btn-circle">❯</a>
+                        </div>
                     </div>
                 </div>
-                <div className="flex justify-center w-full py-2 gap-2">
-                    <a href="#item1" className="btn btn-sm bg-pink-400 hover:bg-pink-600 text-white">1</a>
-                    <a href="#item2" className="btn btn-sm bg-pink-400 hover:bg-pink-600 text-white">2</a>
-                    <a href="#item3" className="btn btn-sm bg-pink-400 hover:bg-pink-600 text-white">3</a>
+                <div className="intro opacity-60 rounded-b-lg">
+                    <p className="p-8 text-center mt-8 text-red-600">Zara is a renowned Spanish fashion brand founded in 1974. Known for its fast fashion approach, Zara is recognized for its ability to quickly adapt to evolving fashion trends and deliver affordable, stylish clothing to a global customer base. With a wide range of apparel and accessories for men, women, and children, Zara has become a go-to choice for those seeking up-to-the-minute fashion and design. The brand's emphasis on rapid production and distribution has allowed it to maintain a strong presence in the fashion industry.</p>
                 </div>
             </div>
 

@@ -18,16 +18,16 @@ const DisplayZara = ({ data }) => {
                         <p>Type: {type}</p>
                     </div>
                     <div>
-                        <p className="pb-[4px] flex items-center gap-1">Rating: {rating} <AiFillStar className="text-orange-400"/></p>
+                        <p className="pb-[4px] flex items-center gap-1">Rating: {rating} <AiFillStar className="text-orange-500 text-lg"/></p>
                         <p>Price: {price}</p>
                     </div>
                 </div>
                 <div className="bg-pink-600 rounded-b-lg text-white flex justify-around items-center">
                     <div className="pr-8 py-3">
-                        <Link to={`/detail/${_id}`} className="flex items-center gap-2">See Detail<FaCircleArrowRight/></Link>
+                        <Link to={`/detail/${_id}`} className="flex items-center gap-2 hover:text-black">See Detail<FaCircleArrowRight/></Link>
                     </div>
                     <div>
-                        <Link to={`/update/${_id}`} className="py-3 flex items-center gap-2">Update <LuPenSquare/></Link>
+                        <Link to={`/update/${_id}`} className="py-3 flex items-center gap-2 hover:text-black">Update <LuPenSquare/></Link>
                     </div>
                 </div>
             </div>
