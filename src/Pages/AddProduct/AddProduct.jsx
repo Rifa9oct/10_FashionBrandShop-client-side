@@ -44,7 +44,7 @@ const AddProduct = () => {
         <div>
             <div className="lg:relative">
                 <div className="lg:relative">
-                    <div className="lg:absolute left-[580px] top-[40px]">
+                    <div className="lg:absolute left-[600px] top-[40px]">
                         <h1 className="text-3xl text-center md:text-4xl mb-5">Add Your <span className="text-orange-600">Favourite</span></h1>
                     </div>
                     <img className="hidden lg:block lg:w-full" src={add} />

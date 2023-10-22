@@ -39,7 +39,7 @@ const Register = () => {
         createUser(email, password)
             .then(result => {
                 console.log(result.user);
-                Swal.fire("Great!", "Registration successfull", "success");
+                Swal.fire("Great!", "Registration successful", "success");
                 updateProfile(result.user, {
                     displayName: name,
                     photoURL: photoUrl

@@ -38,7 +38,7 @@ const DisplayMyCart = ({ mycart, mycarts, setMycarts }) => {
 
     return (
         <div className="w-[312px] border rounded-lg shadow-xl mx-auto">
-            <img src={photoUrl} className="rounded-xl h-[250px]" />
+            <img src={photoUrl} className="rounded-t-lg h-[250px]" />
             <div>
                 <h2 className="text-pink-600 text-xl text-center my-3">{name}</h2>
                 <div className="text-sm text-gray-500 px-5 mb-4 flex items-center justify-between">
@@ -47,7 +47,7 @@ const DisplayMyCart = ({ mycart, mycarts, setMycarts }) => {
                         <p>Type: {type}</p>
                     </div>
                     <div>
-                        <p className="pb-[4px] flex items-center gap-1">Rating: {rating} <AiFillStar className="text-orange-400" /></p>
+                        <p className="pb-[4px] flex items-center gap-1">Rating: {rating} <AiFillStar className="text-orange-500 text-lg" /></p>
                         <p>Price: {price}</p>
                     </div>
                 </div>

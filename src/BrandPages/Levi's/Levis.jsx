@@ -9,8 +9,8 @@ const Lavis = () => {
 
     return (
         <div>
-            <div className="bannar hover:cursor-pointer relative max-w-[1320px] mt-10 mx-auto">
-                <div className="carousel rounded-md h-[500px]">
+            <div className="bannar h-[500px] hover:cursor-pointer relative max-w-[1320px] mt-10 mx-auto">
+                <div className="carousel rounded-lg h-[500px]">
                     <div id="slide1" className="carousel-item relative w-full">
                         <img src="https://i.ibb.co/Pg4KmK4/Untitled-2.png" className="w-full"/>
                         <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -34,7 +34,7 @@ const Lavis = () => {
                     </div>
                 </div>
                 <div className="intro opacity-60 rounded-b-lg">
-                    <p className="p-8 text-center mt-8 text-red-600">Levi's, short for Levi Strauss & Co., is an iconic American denim brand founded in 1853. Known for pioneering the blue jeans, Levi's has a rich heritage in creating durable, high-quality denim garments. Levi's jeans have become a symbol of timeless style, durability, and the spirit of American workwear. The brand's signature red tab and riveted pockets have made Levi's a classic choice for those seeking both fashion and functionality in their denim attire.</p>
+                    <p className="p-3 md:p-8 md:mt-3 text-sm lg:text-lg text-center lg:mt-5 text-red-600">Levi's, short for Levi Strauss & Co., is an iconic American denim brand founded in 1853. Known for pioneering the blue jeans, Levi's has a rich heritage in creating durable, high-quality denim garments. Levi's jeans have become a symbol of timeless style, durability, and the spirit of American workwear. The brand's signature red tab and riveted pockets have made Levi's a classic choice for those seeking both fashion and functionality in their denim attire.</p>
                 </div>
             </div>
 

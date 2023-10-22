@@ -19,7 +19,7 @@ const Login = () => {
         const password = e.target.password.value;
         signinUser(email, password)
             .then(() => {
-                Swal.fire("Good job", "Login successfull", "success");
+                Swal.fire("Good job", "Login successful", "success");
                 setLogin(true);
                 navigate(location?.state ? location.state : "/")
                 e.target.reset();
@@ -43,10 +43,10 @@ const Login = () => {
 
 
     return (
-        <div className="w-3/4 mt-16 mb-20 pb-8 lg:w-[848px] bg-slate-100 mx-auto flex flex-col-reverse lg:flex-row items-center justify-center rounded-lg shadow-lg">
-            <div className="w-3/4 lg:w-[385px] mx-8">
+        <div className="mx-5 mt-16 mb-20 pb-8 lg:pb-0 lg:w-[848px] bg-slate-100 lg:mx-auto flex flex-col-reverse lg:flex-row items-center justify-center rounded-lg shadow-lg">
+            <div className=" lg:w-[385px] mx-8">
                 <form onSubmit={handleLogin}>
-                    <div className="form-control mt-10">
+                    <div className="form-control lg:mt-5 mt-10">
                         <label className="label">
                             <span className="label-text">Email</span>
                         </label>
@@ -91,7 +91,7 @@ const Login = () => {
                     <button onClick={handleGoogleSignIn} className="">Continue with google</button>
                 </div>
             </div>
-            <div><img className="lg:w-[400px] rounded-lg lg:rounded-r-lg shadow-lg mx-auto" src={img} /></div>
+            <div><img className="lg:w-[400px] rounded-t-lg lg:rounded-t-none lg:rounded-r-lg shadow-lg mx-auto" src={img} /></div>
         </div>
     );
 };
