@@ -1,10 +1,14 @@
 import { useLoaderData } from "react-router-dom";
 import DisplayMyCart from "./DisplayMyCart";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 const MyCart = () => {
     const loadedData = useLoaderData();
-    const [mycarts, setMycarts] = useState(loadedData);
+    const {user} = useContext(AuthContext);
+    const filterData = loadedData.filter(item => item.email === user.email);
+   
+    const [mycarts, setMycarts] = useState(filterData);
     console.log(mycarts)
     return (
         <div>
